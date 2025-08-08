@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link href="resources/photon-geocoder-autocomplete.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        #map {
+            width: 1007px;
+            height: 744px;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="resources/photon-geocoder-autocomplete.min.js"></script>
+        <script src="layers/Pacitan_0.js"></script><script src="layers/Ponorogo_1.js"></script><script src="layers/Trenggalek_2.js"></script><script src="layers/Tulungagung_3.js"></script><script src="layers/Blitar_4.js"></script><script src="layers/KotaBlitar_5.js"></script><script src="layers/Kediri_6.js"></script><script src="layers/KotaKediri_7.js"></script><script src="layers/Malang_8.js"></script><script src="layers/KotaMalang_9.js"></script><script src="layers/Lumajang_10.js"></script><script src="layers/Jember_11.js"></script><script src="layers/Banyuwangi_12.js"></script><script src="layers/Bondowoso_13.js"></script><script src="layers/Situbondo_14.js"></script><script src="layers/Probolinggo_15.js"></script><script src="layers/KotaProbolinggo_16.js"></script><script src="layers/Pasuruan_17.js"></script><script src="layers/KotaPasuruan_18.js"></script><script src="layers/Sidoarjo_19.js"></script><script src="layers/Mojokerto_20.js"></script><script src="layers/KotaMojokerto_21.js"></script><script src="layers/Jombang_22.js"></script><script src="layers/Ngajuk_23.js"></script><script src="layers/Madiun_24.js"></script><script src="layers/KotaMadiun_25.js"></script><script src="layers/Magetan_26.js"></script><script src="layers/Ngawi_27.js"></script><script src="layers/Bojonegoro_28.js"></script><script src="layers/Tuban_29.js"></script><script src="layers/Lamongan_30.js"></script><script src="layers/Gresik_31.js"></script><script src="layers/Bangkalan_32.js"></script><script src="layers/Sampang_33.js"></script><script src="layers/Pamekasan_34.js"></script><script src="layers/Sumenep_35.js"></script><script src="layers/Surabaya_36.js"></script><script src="layers/Batu_37.js"></script><script src="layers/BatasKabupaten_38.js"></script>
+        <script src="styles/Pacitan_0_style.js"></script><script src="styles/Ponorogo_1_style.js"></script><script src="styles/Trenggalek_2_style.js"></script><script src="styles/Tulungagung_3_style.js"></script><script src="styles/Blitar_4_style.js"></script><script src="styles/KotaBlitar_5_style.js"></script><script src="styles/Kediri_6_style.js"></script><script src="styles/KotaKediri_7_style.js"></script><script src="styles/Malang_8_style.js"></script><script src="styles/KotaMalang_9_style.js"></script><script src="styles/Lumajang_10_style.js"></script><script src="styles/Jember_11_style.js"></script><script src="styles/Banyuwangi_12_style.js"></script><script src="styles/Bondowoso_13_style.js"></script><script src="styles/Situbondo_14_style.js"></script><script src="styles/Probolinggo_15_style.js"></script><script src="styles/KotaProbolinggo_16_style.js"></script><script src="styles/Pasuruan_17_style.js"></script><script src="styles/KotaPasuruan_18_style.js"></script><script src="styles/Sidoarjo_19_style.js"></script><script src="styles/Mojokerto_20_style.js"></script><script src="styles/KotaMojokerto_21_style.js"></script><script src="styles/Jombang_22_style.js"></script><script src="styles/Ngajuk_23_style.js"></script><script src="styles/Madiun_24_style.js"></script><script src="styles/KotaMadiun_25_style.js"></script><script src="styles/Magetan_26_style.js"></script><script src="styles/Ngawi_27_style.js"></script><script src="styles/Bojonegoro_28_style.js"></script><script src="styles/Tuban_29_style.js"></script><script src="styles/Lamongan_30_style.js"></script><script src="styles/Gresik_31_style.js"></script><script src="styles/Bangkalan_32_style.js"></script><script src="styles/Sampang_33_style.js"></script><script src="styles/Pamekasan_34_style.js"></script><script src="styles/Sumenep_35_style.js"></script><script src="styles/Surabaya_36_style.js"></script><script src="styles/Batu_37_style.js"></script><script src="styles/BatasKabupaten_38_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
